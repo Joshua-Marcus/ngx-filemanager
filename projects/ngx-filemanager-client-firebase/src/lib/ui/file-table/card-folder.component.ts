@@ -33,6 +33,7 @@ import { FileActionDefinition } from './FileActionDefinition';
         <div>
           <h5 class="m0 mb-5 has-ellipsis">{{ folder.name }}</h5>
           <small class="m0 color-grey">{{ folder.size | fileSize }}</small>
+          <small class="m0 color-grey">{{ fileCount }}</small>
         </div>
       </div>
       <button
@@ -81,6 +82,11 @@ export class CardFolderComponent {
 
   onSelect() {
     this.selectedItem.select(this.folder.fullPath);
+  }
+
+  get fileCount() {
+    console.log(this.folder.metaData);
+    return 5
   }
   onCheck() {
     this.checkedItems.select(this.folder.fullPath);

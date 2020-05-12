@@ -33,7 +33,7 @@ const entryComponents = [
   AppDialogPermissionsSetObjectComponent,
   AppDialogCopyComponent,
   AppDialogUploadFilesComponent,
-  AppDialogMyDetailsComponent
+  AppDialogMyDetailsComponent,
 ];
 
 const declarations = [...entryComponents, AppBtnsCancelOkComponent];

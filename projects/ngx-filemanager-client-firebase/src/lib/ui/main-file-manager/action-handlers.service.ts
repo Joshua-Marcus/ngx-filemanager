@@ -255,7 +255,7 @@ export class ActionHandlersService {
       this.logger.info('onClickNewFolder   no folder created...');
       return;
     }
-    return this.OnNewFolder(newDirName);
+  return this.OnNewFolder(newDirName);
   }
 
   public async OnNewFolder(newDirName: string) {
